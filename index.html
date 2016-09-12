@@ -11438,7 +11438,7 @@ var Machine = Class({
     },
 
     jog: function( axis, direction, distance, feedrate ){
-        this.send_command("G91\nG1 " + axis + distance*direction + " F" + feedrate + "\nG90");
+        this.send_command("G91\nG0 " + axis + distance*direction + " F" + feedrate + "\nG90");
     }
 
 }); 
