@@ -6,7 +6,7 @@ use File::Slurp;
 use utf8;
 
 # Get the template file
-my $template = read_file("templates/index.tpl");
+my $template = read_file("src/templates/fabrica/index.tpl");
 
 # Remove mocks
 $template =~ s/<!--removeIf.*-->(.|\n)*<!--endRemoveIf.*-->//s;
@@ -33,7 +33,7 @@ for my $to_replace ( split("\n", $template) ){
 }
 
 # Generate new file
-write_file( 'index.html', join("\r\n", @replaced) );
+write_file( 'index-fabrica.html', join("\r\n", @replaced) );
 
 system("python smoothie-upload.py index.html 192.168.0.20");
 

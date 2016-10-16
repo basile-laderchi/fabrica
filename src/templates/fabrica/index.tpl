@@ -30,31 +30,31 @@
     <div id="screen"> </div>
     
     <!-- html files for screens -->
-    @@include('src/screens/connection.html')
-    @@include('src/screens/network_scan.html')
-    @@include('src/screens/initialization.html')
-    @@include('src/screens/welcome.html')
-    @@include('src/screens/main.html')
-    @@include('src/screens/control/control.html')
-    @@include('src/screens/control/move.html')
-    @@include('src/screens/control/home.html')
-    @@include('src/screens/control/spindle.html')
-    @@include('src/screens/control/temperature.html')
-    @@include('src/screens/control/extruder.html')
-    @@include('src/screens/control/terminal.html')
-    @@include('src/screens/make/make.html')
-    @@include('src/screens/make/play.html')
-    @@include('src/screens/make/upload.html')
-    @@include('src/screens/configuration/configuration.html')
-    @@include('src/screens/configuration/raw_configuration.html')
+    @@include('src/interfaces/fabrica/core/connection.html')
+    @@include('src/interfaces/fabrica/core/network_scan.html')
+    @@include('src/interfaces/fabrica/core/initialization.html')
+    @@include('src/interfaces/fabrica/core/welcome.html')
+    @@include('src/interfaces/fabrica/main.html')
+    @@include('src/interfaces/fabrica/control/control.html')
+    @@include('src/interfaces/fabrica/control/move.html')
+    @@include('src/interfaces/fabrica/control/home.html')
+    @@include('src/interfaces/fabrica/control/spindle.html')
+    @@include('src/interfaces/fabrica/control/temperature.html')
+    @@include('src/interfaces/fabrica/control/extruder.html')
+    @@include('src/interfaces/fabrica/control/terminal.html')
+    @@include('src/interfaces/fabrica/make/make.html')
+    @@include('src/interfaces/fabrica/make/play.html')
+    @@include('src/interfaces/fabrica/make/upload.html')
+    @@include('src/interfaces/fabrica/configuration/configuration.html')
+    @@include('src/interfaces/fabrica/configuration/raw_configuration.html')
 
     <!-- html files for help screens -->
-    @@include('src/help/screens/connection.html')
+    <!-- @@include('src/help/screens/connection.html') -->
 
     <!-- html files for miscalenous definitions -->
-    @@include('src/screens/configuration/definitions.html')
+    @@include('src/interfaces/fabrica/configuration/definitions.html')
     <!-- html files for pin definitions -->
-    @@include('src/screens/configuration/pin_definitions.html')
+    @@include('src/interfaces/fabrica/configuration/pin_definitions.html')
 
     <!-- jquery (necessary for bootstrap's javascript plugins) -->
     <script src="static/js/jquery-2.2.1.min.js" inline></script>
@@ -90,39 +90,39 @@
     <script src="src/core/updater.js" inline></script>
 
     <!-- Connection screen -->
-    <script src="src/screens/connection.js" inline></script>
+    <script src="src/interfaces/fabrica/core/connection.js" inline></script>
     <!-- Network scan screen -->
-    <script src="src/screens/network_scan.js" inline></scrip
+    <script src="src/interfaces/fabrica/core/network_scan.js" inline></scrip
     <!-- Initialization screen -->
-    <script src="src/screens/initialization.js" inline></script>
+    <script src="src/interfaces/fabrica/core/initialization.js" inline></script>
     <!-- Welcome screen -->
-    <script src="src/screens/welcome.js" inline></script>
+    <script src="src/interfaces/fabrica/core/welcome.js" inline></script>
     <!-- Main screen -->
-    <script src="src/screens/main.js" inline></script>
+    <script src="src/interfaces/fabrica/main.js" inline></script>
     <!-- Control screen -->
-    <script src="src/screens/control/control.js" inline></script>
+    <script src="src/interfaces/fabrica/control/control.js" inline></script>
     <!-- Move screen -->
-    <script src="src/screens/control/move.js" inline></script>
+    <script src="src/interfaces/fabrica/control/move.js" inline></script>
     <!-- Home screen -->
-    <script src="src/screens/control/home.js" inline></script>
+    <script src="src/interfaces/fabrica/control/home.js" inline></script>
     <!-- Spindle screen -->
-    <script src="src/screens/control/spindle.js" inline></script>
+    <script src="src/interfaces/fabrica/control/spindle.js" inline></script>
     <!-- Temperature screen -->
-    <script src="src/screens/control/temperature.js" inline></script>
+    <script src="src/interfaces/fabrica/control/temperature.js" inline></script>
     <!-- Extruder screen -->
-    <script src="src/screens/control/extruder.js" inline></script>
+    <script src="src/interfaces/fabrica/control/extruder.js" inline></script>
     <!-- Terminal screen -->
-    <script src="src/screens/control/terminal.js" inline></script>
+    <script src="src/interfaces/fabrica/control/terminal.js" inline></script>
     <!-- Make screen -->
-    <script src="src/screens/make/make.js" inline></script>
+    <script src="src/interfaces/fabrica/make/make.js" inline></script>
     <!-- Play screen -->
-    <script src="src/screens/make/play.js" inline></script>
+    <script src="src/interfaces/fabrica/make/play.js" inline></script>
     <!-- Upload screen -->
-    <script src="src/screens/make/upload.js" inline></script>
+    <script src="src/interfaces/fabrica/make/upload.js" inline></script>
     <!-- Configuration screen -->
-    <script src="src/screens/configuration/configuration.js" inline></script>
+    <script src="src/interfaces/fabrica/configuration/configuration.js" inline></script>
     <!-- Raw Configuration screen -->
-    <script src="src/screens/configuration/raw_configuration.js" inline></script>
+    <script src="src/interfaces/fabrica/configuration/raw_configuration.js" inline></script>
 
     <!--removeIf(production)-->
     <!-- Mock module -->
