@@ -35,3 +35,7 @@ for my $to_replace ( split("\n", $template) ){
 # Generate new file
 write_file( 'index.html', join("\r\n", @replaced) );
 
+system("python smoothie-upload.py index.html 192.168.0.20");
+
+
+
