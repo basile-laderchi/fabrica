@@ -8,6 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>fabrica.</title>
 
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+
     <!-- Bootstrap -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet" inline>
     <!-- Bootstrap callouts -->
@@ -18,6 +21,8 @@
     <link href="static/css/jquery.bootstrap-touchspin.css" rel="stylesheet" inline>
     <!-- Bootstrap switch -->
     <link href="static/css/bootstrap-switch.min.css" rel="stylesheet" inline>
+    <!-- Bootstrap slider -->
+    <link href="static/css/bootstrap-slider.min.css" rel="stylesheet" inline>
 
   </head>
   <body>
@@ -32,6 +37,14 @@
     @@include('src/screens/main.html')
     @@include('src/screens/control/control.html')
     @@include('src/screens/control/move.html')
+    @@include('src/screens/control/home.html')
+    @@include('src/screens/control/spindle.html')
+    @@include('src/screens/control/temperature.html')
+    @@include('src/screens/control/extruder.html')
+    @@include('src/screens/control/terminal.html')
+    @@include('src/screens/make/make.html')
+    @@include('src/screens/make/play.html')
+    @@include('src/screens/make/upload.html')
     @@include('src/screens/configuration/configuration.html')
     @@include('src/screens/configuration/raw_configuration.html')
 
@@ -51,6 +64,10 @@
     <script src="static/js/jquery.bootstrap-touchspin.js" inline></script>
      <!-- Bootstrap switch-->
     <script src="static/js/bootstrap-switch.min.js" inline></script>
+    <!-- Bootstrap slider switch-->
+    <script src="static/js/bootstrap-slider.min.js" inline></script>
+    <!-- Bootbox-->
+    <script src="static/js/bootbox.min.js" inline></script>
     <!-- Js.class allows more object-oriented javascript -->
     <script src="src/core/js.class/dist/browser/js.class.min.js" inline></script>
     <!-- HandleBar JS Template system -->
@@ -67,6 +84,10 @@
     <script src="src/core/machine.js" inline></script>
     <!-- Parses and stores configuration for a machine -->
     <script src="src/core/configuration.js" inline></script>
+    <!-- Stores and retrieves local configuration -->
+    <script src="src/core/local_config.js" inline></script>
+    <!-- Updates machine position, temperature, etc -->
+    <script src="src/core/updater.js" inline></script>
 
     <!-- Connection screen -->
     <script src="src/screens/connection.js" inline></script>
@@ -82,6 +103,22 @@
     <script src="src/screens/control/control.js" inline></script>
     <!-- Move screen -->
     <script src="src/screens/control/move.js" inline></script>
+    <!-- Home screen -->
+    <script src="src/screens/control/home.js" inline></script>
+    <!-- Spindle screen -->
+    <script src="src/screens/control/spindle.js" inline></script>
+    <!-- Temperature screen -->
+    <script src="src/screens/control/temperature.js" inline></script>
+    <!-- Extruder screen -->
+    <script src="src/screens/control/extruder.js" inline></script>
+    <!-- Terminal screen -->
+    <script src="src/screens/control/terminal.js" inline></script>
+    <!-- Make screen -->
+    <script src="src/screens/make/make.js" inline></script>
+    <!-- Play screen -->
+    <script src="src/screens/make/play.js" inline></script>
+    <!-- Upload screen -->
+    <script src="src/screens/make/upload.js" inline></script>
     <!-- Configuration screen -->
     <script src="src/screens/configuration/configuration.js" inline></script>
     <!-- Raw Configuration screen -->
