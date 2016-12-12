@@ -11,8 +11,14 @@ var ConnectionScreen = Screen.extend({
         }
 
         // Add handlers
-        this.html.find(".btn-connect").off().click(function(){ fabrica.screens.connection.attempt_connection(); });
-        this.html.find(".btn-start-search").off().click(function(){ fabrica.screens.network_scan.enter(); });
+        this.html.find(".btn-connect").off().click(function(e){
+            e.preventDefault();
+            fabrica.screens.connection.attempt_connection();
+        });
+        this.html.find(".btn-start-search").off().click(function(e){
+            e.preventDefault();
+            fabrica.screens.network_scan.enter();
+        });
     },
 
     attempt_connection: function(){
