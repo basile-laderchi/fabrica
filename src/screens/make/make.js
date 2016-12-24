@@ -6,8 +6,14 @@ var MakeScreen = Screen.extend({
         this.display('make_screen');
 
         // Setup button clicks       
-        this.html.find(".btn-play").off().click(function(){ fabrica.screens.play.enter(); });
-        this.html.find(".btn-upload").off().click(function(){ fabrica.screens.upload.enter(); });
+        this.html.find(".btn-play").off().click(function(e){
+            e.preventDefault();
+            fabrica.screens.play.enter();
+        });
+        this.html.find(".btn-upload").off().click(function(e){
+            e.preventDefault();
+            fabrica.screens.upload.enter();
+        });
     },
 
 });
